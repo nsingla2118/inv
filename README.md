@@ -33,15 +33,6 @@ Small Size: Try to minimize size.
 
 
 Possible Names: StockMate
-InventoTrack
+Invento
 StockFlow
-InvenSync
-QuickStock
-SmartInventory
 StockEase
-InvManage
-RapidStock
-SyncStock
-NextGen Inventory
-NexusGoods
-NimbleGoods Manager
