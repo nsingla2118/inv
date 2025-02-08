@@ -7,29 +7,17 @@ Design: https://stocktrack-3053.glide.page/#t=Ukb1bGi4lUT23MZCLjo4
 
 Features
 
-User Authentication: Secure login and user roles.
+Different User - Used to add employees
 
-Inventory Tracking: Monitor stock levels in real-time.
+Inventory Tracking and Management: Monitor stock levels in real-time and update the items.
 
-Product Management: Add, edit, and delete inventory items.
+Sales & Purchase Management: Track incoming and outgoing of stock items.
 
-Barcode Scanning: Easily scan products using mobile camera.
+Stock Alerts: Get notifications when stock is low. [Only Backend]
 
-Stock Alerts: Get notifications when stock is low.
+Dashboard : Generate reports on stock levels, sales, and trends.
 
-Sales & Purchase Management: Track incoming and outgoing inventory.
-
-Reports & Analytics: Generate reports on stock levels, sales, and trends.
-
-Cloud Syncing: Synchronize data across multiple devices.
-
-Different Users: Different Permissions for different roles.
-
-Reciept: Bill every item added and scanned.
-
-UI/UX: Unique, Easy and customizable UI.
-
-Small Size: Try to minimize size.
+TODO "Barcode Scanning and Bill genereation : Easily scan products using mobile camera and generate a bill/cart."
 
 
 Possible Names: StockMate
