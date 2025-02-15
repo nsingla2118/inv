@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:inventory/components/dialog_box.dart';
 import 'package:inventory/models/item.dart';
 import 'package:inventory/components/item_tile.dart';
 import 'package:inventory/models/search_widget.dart';
@@ -8,57 +9,12 @@ class InventoryPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    void dialog() {
+    showdialog() {
       showDialog(
         context: context,
         builder: (BuildContext context) {
-          return AlertDialog(
-            title: const Text('Add Item'),
-            content: const Column(
-              children:  [
-                TextField(
-                  decoration: InputDecoration(
-                    hintText: 'Item Name',
-                  ),
-                  
-                ),
-                TextField(
-                  decoration: InputDecoration(
-                    hintText: 'Item Count',
-                  ),
-                ),
-                TextField(
-                  decoration: InputDecoration(
-                    hintText: 'Cost Price',
-                  ),
-                ),
-                TextField(
-                  decoration: InputDecoration(
-                    hintText: 'Selling Price',
-                  ),
-                ),
-                TextField(
-                  decoration: InputDecoration(
-                    hintText: 'Item Category',
-                  ),
-                ),
-              ],
-            ),
-            actions: [
-              TextButton(
-                child: const Text('Add'),
-                onPressed: () {
-                  Navigator.of(context).pop();
-                },
-              ),
-              TextButton(child: const Text('Cancel'),
-              onPressed: () {
-                Navigator.of(context).pop();
-              },)
-            ],
-          );
-        }
-      );
+          return DialogBox();
+    });
     }
     return Scaffold(
       body: Column(
@@ -78,7 +34,7 @@ class InventoryPage extends StatelessWidget {
                     children: [
                       const Text('Inventory', style: TextStyle(fontSize: 28),),
                       IconButton(icon: const Icon(Icons.add_circle_outline, size: 26,),
-                       onPressed: dialog,)
+                       onPressed: showdialog,)
                     ],
                   ),
                 ),
