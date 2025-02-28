@@ -8,49 +8,49 @@ class DialogBox extends StatelessWidget {
   Widget build(BuildContext context) {
     return AlertDialog(
       backgroundColor: Colors.blue[50],
-      content: Container(
+      content: SizedBox(
         height: 500,
         child: Column(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
             const TextField(
               // controller: controller,
-              decoration: const InputDecoration(
+              decoration: InputDecoration(
                 border: OutlineInputBorder(),
                 hintText: 'Item Name',
               ),
             ),
             const TextField(
               // controller: controller,
-              decoration: const InputDecoration(
+              decoration: InputDecoration(
                 border: OutlineInputBorder(),
                 hintText: 'Quantity',
               ),
             ),
             const TextField(
               // controller: controller,
-              decoration: const InputDecoration(
+              decoration: InputDecoration(
                 border: OutlineInputBorder(),
                 hintText: 'Cost Price',
               ),
             ),
             const TextField(
               // controller: controller,
-              decoration: const InputDecoration(
+              decoration: InputDecoration(
                 border: OutlineInputBorder(),
                 hintText: 'Selling Price',
               ),
             ),
             const TextField(
               // controller: controller,
-              decoration: const InputDecoration(
+              decoration: InputDecoration(
                 border: OutlineInputBorder(),
                 hintText: 'Minimum Quantity',
               ),
             ),
             const TextField(
               // controller: controller,
-              decoration: const InputDecoration(
+              decoration: InputDecoration(
                 border: OutlineInputBorder(),
                 hintText: 'Upload Image',
               ),

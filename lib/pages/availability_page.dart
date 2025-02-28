@@ -46,19 +46,7 @@ class AvailabilityPage extends StatelessWidget {
                 ),
               ],
             ),
-            actions: [
-              TextButton(
-                child: const Text('Add'),
-                onPressed: () {
-                  Navigator.of(context).pop();
-                },
-              ),
-              TextButton(child: const Text('Cancel'),
-              onPressed: () {
-                Navigator.of(context).pop();
-              },)
-
-            ],
+           
           );
         }
 

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:inventory/components/users_dialog.dart';
 
 class UsersPage extends StatefulWidget {
   const UsersPage({super.key});
@@ -12,53 +13,12 @@ class _UsersPageState extends State<UsersPage> {
 
   @override
   Widget build(BuildContext context) {
-    // ignore: non_constant_identifier_names
-    void Dialog() {
+     showdialog() {
       showDialog(
         context: context,
         builder: (BuildContext context) {
-          return AlertDialog(
-            title: const Text('Add Item'),
-            content: Column(
-              children:  [
-                const TextField(
-                  decoration: InputDecoration(
-                    hintText: 'User Name',
-                  ),
-                ),
-                const TextField(
-                  decoration: InputDecoration(
-                    hintText: 'Email'
-                  ),
-                ),
-                DropdownButton(
-                  hint: const Text('Select Role'),
-                  items: const [
-                    DropdownMenuItem(
-                      value: 'Admin',
-                      child: Text('Admin'),
-                    ),
-                    DropdownMenuItem(
-                      value: 'Employee',
-                      child: Text('Employee'),
-                    ),
-                  ], onChanged: (String? value) {  },
-                  // onChanged: ,
-                )
-            ],            
-            ),
-            actions: [
-              TextButton(
-                child: const Text('Invite'),
-                onPressed: () {
-                  Navigator.of(context).pop();
-                },
-              ),
-             
-            ],
-          );
-        }
-      );
+          return const UsersDialog();
+    });
     }
 
     return Scaffold(
@@ -66,7 +26,7 @@ class _UsersPageState extends State<UsersPage> {
         backgroundColor: Colors.blueAccent,
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(20)),
-        onPressed: Dialog,
+        onPressed: showdialog,
         child: const Icon(Icons.add)),
       body: Column(
         children: [

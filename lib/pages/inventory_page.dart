@@ -13,7 +13,7 @@ class InventoryPage extends StatelessWidget {
       showDialog(
         context: context,
         builder: (BuildContext context) {
-          return DialogBox();
+          return const DialogBox();
     });
     }
     return Scaffold(
