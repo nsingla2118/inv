@@ -9,9 +9,9 @@ class AvailabilityPage extends StatelessWidget {
       showDialog(
         context: context,
         builder: (BuildContext context) {
-          return AlertDialog(
-            title: const Text('Add Item'),
-            content: const Column(
+          return const AlertDialog(
+            title: Text('Add Item'),
+            content: Column(
               children:  [
                 TextField(
                   decoration: InputDecoration(

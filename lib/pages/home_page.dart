@@ -105,7 +105,7 @@ class _HomePageState extends State<HomePage> {
             ),
             Padding(
               padding: const EdgeInsets.only(bottom: 8.0),
-              child: Text('Developed by TanniaSolutions', style: TextStyle(color: Colors.grey[300]),),
+              child: Text('Developed by TarChsSolutions', style: TextStyle(color: Colors.grey[300]),),
             )
           ],
         ),
